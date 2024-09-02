@@ -1,10 +1,13 @@
+import NavBar from './components/NavBar';
 import './index.css';
+import RouterConfig from './RouterConfig';
 
 function App() {
 
   return (
     <>
-      <p className='text-center text-5xl'>Hello world!</p>
+      <NavBar />
+      <RouterConfig />
     </>
   );
 }
