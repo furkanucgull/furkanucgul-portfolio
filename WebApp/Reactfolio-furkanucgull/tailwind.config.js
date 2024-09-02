@@ -7,6 +7,8 @@ export default {
         PirataOne: ['Pirata One', 'sans-serif'],
         PlaywriteDKLoopet: ['Playwrite DK Loopet', 'sans-serif'],
         SilkScreen: ['Silkscreen', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
+        NewAmsterdam: ['New Amsterdam', 'sans-serif'],
       },
     },
   },

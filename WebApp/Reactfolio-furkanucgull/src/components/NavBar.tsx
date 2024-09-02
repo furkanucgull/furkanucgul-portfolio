@@ -1,15 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import DropDownMenu from "./DropDownMenu";
+import { TbHexagonLetterFFilled } from "react-icons/tb";
 
 const NavBar = () => {
     const navigate = useNavigate();
 
     return (
         <>
-            <nav className="sticky top-0 bg-gradient-to-r from-slate-700 via-zinc-800 to-zinc-800 p-4 z-50">
-                <div className="container mx-auto flex justify-between items-center">
-                    <div className="text-white text-2xl font-PlaywriteDKLoopet ml-12 sm:ml-2">
-                        Furkan
+            <nav className="sticky top-0 bg-gradient-to-r from-slate-800 via-zinc-800 to-zinc-800 p-4 z-50 w-full">
+                <div className="container mx-auto flex justify-between items-center w-full">
+                    <div className="text-white flex   ml-12 sm:ml-2">
+                        <TbHexagonLetterFFilled size={35} /> <span className="mt-2 text-2xl">.</span> <span className=" mt-0.5 ml-1 font-PlaywriteDKLoopet text-2xl"> Ucgul</span>
                     </div>
                     <DropDownMenu />
                     <ul className="hidden sm:flex space-x-4 gap-5">
