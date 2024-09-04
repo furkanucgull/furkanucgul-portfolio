@@ -1,11 +1,10 @@
-import { useNavigate } from "react-router-dom";
 import profileImage from "../images/Furkan.jpg";
 
 const AboutMe = () => {
-    const navigate = useNavigate();
+
     return (
         <>
-            <div className="About-Me sm:flex flex-col sm:flex-row gap-12 sm:gap-40 sm:p-20 p-6 sm:justify-between sm:mb-52">
+            <div className="About-Me sm:flex  flex items-center justify-center flex-col sm:flex-row gap-12 sm:gap-40 sm:p-20 p-6 sm:justify-between sm:mb-52">
                 <div className="text-area sm:max-w-lg">
                     <h1 className="font-NewAmsterdam text-white text-2xl sm:text-5xl italic text-center">ABOUT ME...</h1>
                     <div className="mt-3 leading-relaxed">
@@ -23,14 +22,17 @@ const AboutMe = () => {
                         </p>
                     </div>
                 </div>
-                <img
-                    className="w-56 h-56 sm:w-80 sm:h-80 object-cover rounded-full border-4 mt-5 border-gray-300 shadow-md transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-6"
-                    src={profileImage}
-                    alt="Profile of Furkan"
-                />
+                <div>
+                    <img
+                        className="w-56 h-56 sm:w-80 sm:h-80 object-cover rounded-full border-4 mt-5 border-gray-300 shadow-md relative transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-6"
+                        src={profileImage}
+                        alt="Profile of Furkan"
+                    />
+                    <h2 className="text-white w-72 h-24 text-center justify-center  items-center font-sans bg-blue-500 p-5 relative bottom-10 right-10 shadow-md shadow-yellow-200 rounded-sm hover:scale-110 duration-500 ease-in">"The only way to do great work is to love what you do." <span className="italic bg-gradient-to-r from-yellow-50 to-stone-100 bg-clip-text text-transparent">- Steve Jobs </span></h2>
+
+                </div>
+
             </div>
-            <p className="text-white">click for resume</p>
-            <button onClick={() => navigate("/resume")}> click</button>
         </>
     );
 };

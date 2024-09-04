@@ -9,7 +9,9 @@ const NavBar = () => {
         <>
             <nav className="sticky top-0 bg-gradient-to-r from-slate-800 via-zinc-800 to-zinc-800 p-4 z-50 w-full">
                 <div className="container mx-auto flex justify-between items-center w-full">
-                    <div className="text-white flex   ml-12 sm:ml-2">
+                    <div
+                        onClick={() => navigate("/")}
+                        className="text-white flex   ml-12 sm:ml-2 cursor-pointer ">
                         <TbHexagonLetterFFilled size={35} /> <span className="mt-2 text-2xl">.</span> <span className=" mt-0.5 ml-1 font-PlaywriteDKLoopet text-2xl"> Ucgul</span>
                     </div>
                     <DropDownMenu />
@@ -32,10 +34,10 @@ const NavBar = () => {
                         </li>
                         <li>
                             <a
-                                onClick={() => navigate("/skills")}
+                                onClick={() => navigate("/resume")}
                                 className="text-white cursor-pointer hover:text-gray-200 sm:text-2xl font-PirataOne"
                             >
-                                Skills
+                                Resume
                             </a>
                         </li>
                         <li>
